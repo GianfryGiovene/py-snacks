@@ -1,27 +1,20 @@
-# Creare un dizionario che contenga come
-# chiavi 'nome' e 'cognome', inserendo i propri
-# dati come valori
-# ● Aggiungere 'matricola'
-# ● Aggiungere 'esami', provando ad immaginare
-# che tipi di dato usare per rappresentare sia
-# nome che voto degli esami
+# Data la stringa 'abcdefghi', scrivere
+# un programma che analizzi la stringa e
+# stampi a video:
+# Lettera 1: a
+# Lettera 2: b
+# ...
+# E così via.
+# ● Modificare poi il programma in modo da
+# leggere la stringa da tastiera.
 
-import random
+stringa = input('Inserisci una stringa: ')
+cont = 1
+for i in stringa:
+    print('Lettera ' + str(cont) + ': ' + i)
+    cont += 1
 
-studente = {'nome': input('inserisci nome: '),
-            'cognome': input('inserisci cognome: ')}
+# OR
 
-print(studente)
-
-numberMatricola = ''
-
-for n in 6:
-    n = str(random.random(0, 9))
-    numberMatricola += n
-
-
-matricola = studente['nome'][0] + studente['cognome'][0]
-
-
-print('random', numberMatricola)
-print(matricola)
+for i, letter in enumerate(stringa):
+    print('Lettera ' + str(i) + ': ' + letter)
