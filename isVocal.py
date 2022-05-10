@@ -1,3 +1,5 @@
+# Crea una funzione che verifichi se la lettere inserita dall'utente sia o meno una vocale
+
 vocali = ['a', 'e', 'i', 'o', 'u']
 
 lettera = input()
