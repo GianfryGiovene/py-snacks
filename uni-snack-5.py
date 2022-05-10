@@ -23,4 +23,3 @@ for i in v1:
             print((i * k), end="")
         else:
             print(i * k)
-            counter = 1
